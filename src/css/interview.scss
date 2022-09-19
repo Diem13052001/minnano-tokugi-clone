@@ -1,0 +1,79 @@
+.interview {
+  position: relative;
+  .pattern-1 {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    img {
+      width: 120px;
+    }
+  }
+  .pattern-2 {
+    position: absolute;
+    bottom: -80px;
+    left: -20px;
+    img {
+      width: 120px;
+    }
+  }
+}
+
+.interview__content {
+  z-index: 2;
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 26px;
+  margin: 60px auto;
+  &::before, &::after {
+    content: "";
+    display: block;
+    height: 26px;
+    background-color: #35b7c6;
+    position: absolute;
+    width: 90%;
+  }
+  &::before {
+    top: 0;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+  }
+  &::after {
+    bottom: 0;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+  }
+}
+.interview__inner {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  margin: auto;
+
+  .interview__icon img {
+    margin-top: 45px;
+  }
+  .interview__heading {
+    padding: 20px;
+  }
+}
+.interview__btn {
+  width: 190px;
+  height: 55px;
+  background-color: #1bb3e6;
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 16px;
+  a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 55px;
+  }
+}
+.interview__visicomi img {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+    

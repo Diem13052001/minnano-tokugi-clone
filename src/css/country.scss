@@ -1,0 +1,40 @@
+.country {
+  background: linear-gradient(90deg, #f2905b 0%, #ee7661 100%);;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 50px 0 20px 0;
+  z-index: 1;
+}
+.country__heading {
+  color: #fff;
+  margin: auto auto 60px auto;
+}
+.country__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 12px;
+  .country__item {
+    width: 47%;
+    margin: auto auto 15px auto;
+    background-color: #fff;
+    border-radius: 9999px;
+    a {
+      display: flex;
+      align-items: center;
+      height: 50px;
+    } 
+    .country__item__icon {
+      width: 46px;
+      height: 46px;
+      margin: 2px;
+      img {
+        width: 100%;
+      }
+    }
+    .country__item__name {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.area {
+  position: relative;
+  .pattern-1 {
+    position: absolute;
+    top: auto;
+    bottom: -90px;
+    width: 100px;
+    left: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .pattern-2 {
+    position: absolute;
+    top: auto;
+    bottom: 50%;
+    width: 150px;
+    right: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+.area__content {
+  width: 90%;
+  height: 490px;
+  background-color: #fff;
+  border-radius: 26px;
+  padding-top: 40px;
+  margin: 60px auto;
+  position: relative;
+  z-index: 1;
+}
+.area__heading {
+  padding: 0;
+  margin: auto auto 20px auto;
+  position: relative;
+  z-index: 1;
+}
+.area__inner {
+  padding: 0 10px 0 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.area__field {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  position: relative;
+  .area__img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  .area__map {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    .area__map__btn {
+      max-width: 135px;
+      padding: 6px 28px 6px 0;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      // display: block;
+      color: #a5a5a5;
+      background-color: #fff;
+      color: #333;
+      border: solid 1px #333;
+      cursor: pointer;
+    }
+    .arrow::before {
+      right: 6px;
+      box-sizing: border-box;
+      width: 18px;
+      height: 18px;
+      background-color: #5fb2df;
+      border-radius: 9999px;
+    }
+    .arrow::before, .arrow::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+    }
+    .arrow::after {
+      right: 14px;
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid #fff;
+      border-right: 1px solid #fff;
+      transform: rotate(45deg);
+    }
+    
+    .showActive {
+      background-color: #5fb2df;
+      color: #fff;
+      border: none;  
+    }
+    .showActive.arrow::before {
+      background-color: #fff;
+    }
+    .showActive.arrow::after {
+      border-top: 1px solid #5fb2df;
+      border-right: 1px solid #5fb2df;
+    }
+  }
+}
+
+.hokkaido {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+.kansai {
+  position: absolute;
+  left: 160px;
+  bottom: -10px;
+  transform: translate(-50%);
+}
+.kanto {
+  position: absolute;
+  top: auto;
+  right: auto;
+  left: 180px;
+  bottom: 70px;
+}
+.hokuriku {
+  position: absolute;
+  top: 120px;
+  right: auto;
+  left: 0;
+}
+.kyusyu {
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+}
+.touhoku {
+  position: absolute;
+  top: 75px;
+  left: 0;
+}
+.toukai {
+  position: absolute;
+  bottom: 30px;
+  right: auto;
+  left: 140px;
+}
+.tyugoku {
+  position: absolute;
+  bottom: auto;
+  top: 165px;
+  left: 0px;
+}    

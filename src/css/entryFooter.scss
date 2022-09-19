@@ -1,0 +1,55 @@
+.entryFooter {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .pattern-1 {
+    position: absolute;
+    right: -100px;
+    top: -20px;
+    width: 200px;
+  }
+  .pattern-2 {
+    top: 20px;
+    bottom: auto;
+    left: -20px;
+    width: 100px;
+    position: absolute;
+  }
+  .pattern-3 {
+    bottom: -40px;
+    right: -20px;
+    width: 100px;
+    position: absolute;
+  }
+  .entryFooter__content {
+    background-image: url(https://minnano-tokugi.com/file/box/minnanotokugi/img/entryFooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 360px;
+    .entryFooter__btn {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 1;
+      a {
+        display: block;
+        color: #0b77bd;
+        width: 340px;
+        height: 55px;
+        border: solid 1px #0b77bd;
+        background-color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+}

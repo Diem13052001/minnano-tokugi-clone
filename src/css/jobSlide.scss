@@ -1,0 +1,126 @@
+.jobSlide {
+  background: linear-gradient(90deg, #f2905b 0%, #ee7661 100%);;
+  width: 100%;
+  height: 360px;
+  margin: auto;
+  position: relative;
+  padding-top: 40px;
+}
+.jobSlide__heading {
+  margin: 0 auto 40px auto;
+  color: #fff;
+}
+.jobSlide__list {
+  position: relative;
+  z-index: 1;
+}
+.jobSlide__inner {
+  width: 90%;
+  padding: 0 45px;
+  margin: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  box-sizing: border-box;
+}  
+.swiper-button-prev::before, .swiper-button-prev::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+.swiper-button-prev::before {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 9999px;
+}
+.swiper-button-prev::after {
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  transform: rotate(45deg);
+}
+.swiper-button-next::before, .swiper-button-next::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+.swiper-button-next::before {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 9999px;
+}
+.swiper-button-next::after {
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  transform: rotate(45deg);
+}
+.swiper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+}
+.swiper-wrapper {
+  display: flex;
+  width: 222px;
+}
+.jobSlide__item {
+  width: 202px;
+  margin: auto 10px 10px 10px;
+  background-color: #fff;
+  border-radius: 26px;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 10%);
+  a {
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 26px;
+    border-top-left-radius: 26px;
+  }
+  .jobSlide__block {
+    padding: 15px;
+  }
+  .jobSlide__item__name {
+    color: #333;
+    border-bottom: solid 1px #dddddd;
+    padding: 0 0 20px;
+    margin: auto auto 20px auto;
+    text-align: start;
+  }
+  .jobSlide__item__data {
+    color: #333;
+    .jobSlide__item__address {
+      padding: 0 0 0 10px;
+      background-position: 2px center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: start;
+    }
+    .jobSlide__item__salary {
+      padding: 0 0 0 10px;
+      background-position: 2px center;
+      text-align: start;
+    }
+  }
+}
