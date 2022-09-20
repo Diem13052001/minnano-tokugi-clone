@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { itemCountryTypes } from '../country/country'
 
 import NavMenu from './navMenu'
 import HeaderSite from './headerSite'
@@ -67,4 +69,5 @@ function Header (props) {
         </header>
     )
 }
+// Header.propTypes = itemCountryTypes
 export default Header;

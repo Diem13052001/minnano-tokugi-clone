@@ -1,6 +1,6 @@
 
-
-
+import PropTypes from 'prop-types';
+import { itemIndustryTypes } from './industry'
 function IndustryItem (props) {
 
     return (
@@ -14,4 +14,5 @@ function IndustryItem (props) {
         </div>
     )
 }
+// IndustryItem.propTypes = itemIndustryTypes
 export default IndustryItem;

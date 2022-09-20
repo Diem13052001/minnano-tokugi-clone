@@ -1,10 +1,11 @@
-// import JobSlideContainer from "./jobSlideContainer"
+import PropTypes from 'prop-types';
 import JobSlideItem from './jobSlideItem'
 import '../../css/jobSlide.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Navigation} from "swiper";
 SwiperCore.use([Navigation]);
+
 
 
 
@@ -38,5 +39,15 @@ function JobSlide (props) {
             </div>
         </section>
     )
+}
+export const itemJobTypes = {
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    salary: PropTypes.string.isRequired,
+}
+JobSlide.prototype = {
+    arr: PropTypes.arrayOf(PropTypes.shape(itemJobTypes))
 }
 export default JobSlide

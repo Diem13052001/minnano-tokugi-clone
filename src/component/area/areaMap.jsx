@@ -1,4 +1,10 @@
+import PropTypes from 'prop-types';
+import { itemAreaTypes } from './area'
 
+// AreaMap.propTypes = itemAreaTypes
+AreaMap.defaultProps = {
+    isActive: false
+};
 function AreaMap (props) {
 
     const _onClick = () => {
@@ -13,4 +19,6 @@ function AreaMap (props) {
         </div>
     )
 }
+
+
 export default AreaMap;

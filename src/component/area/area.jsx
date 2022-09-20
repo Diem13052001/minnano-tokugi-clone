@@ -1,11 +1,27 @@
 import '../../css/area.scss'
 
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-import AreaContainer from './areaContainer'
 import ModalContainer from '../modal/modalContainer'
 import AreaImage from "./areaImage";
 import AreaMap from './areaMap'
+
+export const itemAreaTypes = {
+    id: PropTypes.number.isRequired,
+    className:PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+    isActive: PropTypes.bool,
+    imgActive: PropTypes.string.isRequired,
+    text1: PropTypes.string.isRequired,
+    text2: PropTypes.string.isRequired,
+    text3: PropTypes.string.isRequired,
+    text4: PropTypes.string.isRequired,
+}
+Area.prototype = {
+    arr: PropTypes.arrayOf(PropTypes.shape(itemAreaTypes))
+}
 
 function Area (props) {
     const {arr}= props;
@@ -67,4 +83,8 @@ function Area (props) {
         </section>
     )
 }
+
+// Area.prototype = {
+//     arr: PropTypes.arrayOf(PropTypes.shape(itemAreaTypes))
+// }
 export default Area;

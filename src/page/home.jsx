@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Search from '../component/search/search'
 import Country from '../component/country/country'
 import Interview from '../component/interview'
@@ -35,5 +37,11 @@ function Home (props) {
             </div>
         </div>
     )
+}
+Home.propTypes = {
+    arrCountry: PropTypes.array.isRequired,
+    arrIndustry: PropTypes.array.isRequired, 
+    arrArea: PropTypes.array.isRequired, 
+    arrJob: PropTypes.array.isRequired
 }
 export default Home;

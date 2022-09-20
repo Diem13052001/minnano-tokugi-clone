@@ -1,5 +1,5 @@
-
-
+import PropTypes from 'prop-types';
+import { itemJobTypes } from './jobSlide'
 function JobSlideItem (props) {
     return (
         <div className="jobSlide__item">
@@ -18,4 +18,5 @@ function JobSlideItem (props) {
         </div>
     )
 }
+// JobSlideItem.propTypes = itemJobTypes
 export default JobSlideItem;

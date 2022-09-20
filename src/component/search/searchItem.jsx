@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import PropTypes from 'prop-types';
 
 function SearchItem (props) {
     const {label, arr} = props;
@@ -32,5 +32,9 @@ function SearchItem (props) {
         </div>
     )
 
+}
+SearchItem.propTypes = {
+    label: PropTypes.string.isRequired,
+    arr: PropTypes.array.isRequired,
 }
 export default SearchItem;

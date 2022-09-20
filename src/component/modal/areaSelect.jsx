@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+import { itemAreaTypes } from '../area/area'
 import AreaSelectItem from "./areaSelectItem";
 
 function AreaSelect (props) {
@@ -13,4 +15,8 @@ function AreaSelect (props) {
         </div>
     )
 }
+// AreaSelect.propTypes = itemAreaTypes
+AreaSelect.defaultProps = {
+    isActive: false
+};
 export default AreaSelect

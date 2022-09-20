@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import HeaderSite from './headerSite'
 const navList = [
@@ -41,5 +42,8 @@ function NavMenu(props) {
             </div>
         </nav>
     )
+}
+NavMenu.propTypes = {
+    isOpen: PropTypes.bool,
 }
 export default NavMenu;

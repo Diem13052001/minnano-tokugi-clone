@@ -1,5 +1,5 @@
-
-
+import PropTypes from 'prop-types';
+import { itemCountryTypes } from './country'
 function CountryItem (props) {
 
 
@@ -14,4 +14,5 @@ function CountryItem (props) {
         </div>
     )
 }
+// CountryItem.propTypes = itemCountryTypes
 export default CountryItem;

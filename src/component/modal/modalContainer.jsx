@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import { itemAreaTypes } from '../area/area'
+
 import AreaSelect from './areaSelect'
 import '../../css/modal.scss'
 
@@ -27,5 +30,13 @@ function ModalContainer (props) {
         </div>
     )
 }
-
+// ModalContainer.propTypes = {
+//     arr: PropTypes.array.isRequired, 
+//     isShow: PropTypes.bool, 
+//     showModal: PropTypes.bool
+// }
+ModalContainer.defaultProps = {
+    isShow: false,
+    showModal: false
+}
 export default ModalContainer;

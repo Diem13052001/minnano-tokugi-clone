@@ -1,7 +1,13 @@
-import CountryContainer from "./countryContainer"
+import PropTypes from 'prop-types';
+
 import CountryItem from './countryItem'
 import '../../css/country.scss'
 
+export const itemCountryTypes = {
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+}
 function Country (props) {
     const {arr} = props;
     return (
@@ -16,5 +22,9 @@ function Country (props) {
             </div>
         </section>
     )
+}
+
+Country.prototype = {
+    arr: PropTypes.arrayOf(PropTypes.shape(itemCountryTypes))
 }
 export default Country

@@ -1,4 +1,8 @@
-import SearchContainer from "./searchContainer";
+import PropTypes from 'prop-types';
+import { itemCountryTypes } from '../country/country'
+import { itemIndustryTypes } from '../industry/industry'
+// import { itemAreaTypes } from '../area/area'
+
 import SearchItem from "./searchItem";
 import '../../css/search.scss'
 
@@ -40,4 +44,9 @@ function Search (props) {
         </section>
     )
 }
+// Search.propTypes = {
+//     arrCountry: PropTypes.arrayOf(PropTypes.shape(itemCountryTypes)),
+//     arrIndustry: PropTypes.arrayOf(PropTypes.shape(itemIndustryTypes)),
+//     arrArea: PropTypes.arrayOf(PropTypes.shape(itemAreaTypes))
+// }
 export default Search;

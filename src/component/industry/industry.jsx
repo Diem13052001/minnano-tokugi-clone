@@ -1,4 +1,4 @@
-import IndustryContainer from './industryContainer'
+import PropTypes from 'prop-types';
 import IndustryItem from './industryItem'
 import '../../css/industry.scss'
 
@@ -17,5 +17,12 @@ function Industry (props) {
         </section>
     )
 }
-
+export const itemIndustryTypes = {
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+}
+Industry.prototype = {
+    arr: PropTypes.arrayOf(PropTypes.shape(itemIndustryTypes))
+}
 export default Industry;
